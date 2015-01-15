@@ -1,0 +1,5 @@
+modulo: login
+config:
+    template: login.html
+    css: login.css
+    js: login.js

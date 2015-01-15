@@ -1,0 +1,4 @@
+modulo: vendedores
+config:
+    template: main.html
+        

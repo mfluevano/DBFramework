@@ -1,0 +1,4 @@
+modulo: promociones
+config:
+    template: main.html
+        

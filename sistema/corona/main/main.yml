@@ -1,0 +1,4 @@
+modulo: main
+config:
+    template: main.html
+        

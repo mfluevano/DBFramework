@@ -1,0 +1,55 @@
+modulo: metodospago
+config:
+    template: main.html
+campos:
+    metodo:
+        tipo: text
+        label: 'Metodo de Pago'
+        icono: 'fa-credit-card'
+        nombre: 'metodo'
+        texto: 'Metodo de pago'
+formularios:
+    listar: 
+        columnas: 1
+        titulo: 'Lista de metodos'
+        campos: [metodo]
+        accion: listar
+        btTabla:
+            activar:
+                icono: fa-plus-square
+                centinela: estatus
+                valor: 0
+                tooltip: Activar
+                accion: '?modulo=metodospago&operacion=activar'
+                tipo: success
+            desactivar:
+                icono: fa-minus-square
+                centinela: estatus
+                valor: 1
+                tooltip: Desactivar
+                accion: '?modulo=metodospago&operacion=desactivar'
+                tipo: danger
+            modificar:
+                icono: fa-edit
+                centinela: estatus
+                valor: 1
+                tooltip: Modificar
+                accion: '?modulo=metodospago&operacion=modificar'
+                tipo: info
+        botones: 
+            buscar:
+                label: buscar
+                tipo: submit
+    registrar: 
+        columnas: 1
+        titulo: 'Registro de metodos de pago'
+        campos: [metodo]
+        accion: registra
+        botones: 
+            registrar:
+                label: registrar
+                tipo: submit
+acciones: [listar, registrar]
+default: listar
+config:
+    template: main.html
